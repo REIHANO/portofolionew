@@ -1,0 +1,2 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = { content: ['./index.html', './script.js'], theme: { extend: { colors: { ink:'#101b31', muted:'#667085', paper:'#f8faff', soft:'#eef3ff', line:'#dce5f5', brand:'#4f46e5', brandDark:'#3525cd' }, fontFamily: { sans:['Inter','sans-serif'], display:['Plus Jakarta Sans','sans-serif'], mono:['JetBrains Mono','monospace'] }, boxShadow: { card:'0 12px 35px rgba(44,62,105,.08)' } } }, plugins: [] };

@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mengenal HTML semantik dan manfaatnya untuk website yang terstruktur."
+    />
+    <title>Mengenal HTML Semantik · Muhammad Reihano</title>
+    <link rel="stylesheet" href="tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-paper text-ink antialiased">
+    <header class="border-b border-line bg-paper/90 backdrop-blur-xl">
+      <div
+        class="mx-auto flex h-16 max-w-4xl items-center justify-between px-5 lg:px-8"
+      >
+        <a href="index.html" class="font-display text-lg tracking-tight"
+          >Muhammad Reihano<span class="text-brand">.</span></a
+        >
+        <nav
+          aria-label="Navigasi artikel"
+          class="flex items-center gap-4 text-sm font-medium text-muted"
+        >
+          <a class="nav-link" href="index.html#artikel">Artikel</a
+          ><a class="nav-link" href="index.html#kontak">Kontak</a>
+        </nav>
+      </div>
+    </header>
+    <main class="mx-auto max-w-4xl px-5 py-16 lg:px-8">
+      <article aria-labelledby="article-title">
+        <header class="mb-12 max-w-3xl">
+          <p class="section-kicker">Tutorial · 5 menit membaca</p>
+          <h1
+            id="article-title"
+            class="mt-4 font-display text-4xl leading-tight tracking-[-.04em] sm:text-6xl"
+          >
+            Mengenal HTML Semantik: Struktur Website yang Lebih Bermakna
+          </h1>
+          <p class="mt-6 text-lg leading-8 text-muted">
+            HTML semantik membantu kita membuat struktur halaman yang lebih
+            jelas untuk pengguna, mesin pencari, dan teknologi bantuan.
+          </p>
+          <div class="mt-6 flex items-center gap-3 text-sm text-muted">
+            <time datetime="2026-09-17">17 September 2026</time
+            ><span aria-hidden="true">·</span><span>Oleh Muhammad Reihano</span>
+          </div>
+        </header>
+        <figure class="article-cover">
+          <div class="font-mono text-sm text-indigo-100">
+            &lt;main&gt;<br />&nbsp;&nbsp;&lt;article&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;Makna
+            lebih penting daripada sekadar tampilan.<br />&nbsp;&nbsp;&lt;/article&gt;<br />&lt;/main&gt;
+          </div>
+          <figcaption>
+            Contoh struktur halaman menggunakan elemen HTML semantik.
+          </figcaption>
+        </figure>
+        <div class="article-layout mt-12">
+          <aside aria-label="Daftar isi artikel" class="article-toc">
+            <p class="font-mono text-xs uppercase tracking-wider text-brand">
+              Daftar isi
+            </p>
+            <nav class="mt-4 space-y-3 text-sm">
+              <a href="#apa-itu">Apa itu HTML semantik?</a
+              ><a href="#manfaat">Manfaat HTML semantik</a
+              ><a href="#contoh">Contoh elemen</a
+              ><a href="#kesimpulan">Kesimpulan</a>
+            </nav>
+          </aside>
+          <div class="article-content">
+            <section id="apa-itu">
+              <h2>Apa itu HTML semantik?</h2>
+              <p>
+                HTML semantik adalah penggunaan elemen HTML berdasarkan makna
+                dan perannya di dalam halaman. Elemen seperti
+                <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, dan
+                <code>&lt;footer&gt;</code> menjelaskan fungsi konten secara
+                langsung.
+              </p>
+              <p>
+                Berbeda dengan menggunakan banyak elemen
+                <code>&lt;div&gt;</code>, struktur semantik membuat dokumen
+                lebih mudah dipahami oleh developer dan perangkat lunak yang
+                memprosesnya.
+              </p>
+            </section>
+            <section id="manfaat">
+              <h2>Manfaat HTML semantik</h2>
+              <ul>
+                <li>
+                  <strong>Aksesibilitas:</strong> screen reader dapat mengenali
+                  bagian halaman dengan lebih baik.
+                </li>
+                <li>
+                  <strong>SEO:</strong> mesin pencari lebih mudah memahami
+                  hierarki dan konteks konten.
+                </li>
+                <li>
+                  <strong>Maintainability:</strong> developer dapat menemukan
+                  dan mengubah bagian tertentu dengan lebih cepat.
+                </li>
+                <li>
+                  <strong>Konsistensi:</strong> struktur halaman menjadi lebih
+                  teratur dan mudah dikembangkan.
+                </li>
+              </ul>
+            </section>
+            <section id="contoh">
+              <h2>Contoh elemen semantik</h2>
+              <div class="code-block">
+                <code
+                  >&lt;header&gt;<br />&nbsp;&nbsp;&lt;nav&gt;Menu
+                  navigasi&lt;/nav&gt;<br />&lt;/header&gt;<br /><br />&lt;main&gt;<br />&nbsp;&nbsp;&lt;article&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Judul
+                  artikel&lt;/h1&gt;<br />&nbsp;&nbsp;&lt;/article&gt;<br />&lt;/main&gt;<br /><br />&lt;footer&gt;Informasi
+                  footer&lt;/footer&gt;</code
+                >
+              </div>
+              <p>
+                Setiap elemen memiliki tanggung jawab yang jelas. Gunakan
+                <code>&lt;section&gt;</code> untuk kelompok konten yang memiliki
+                tema, dan gunakan <code>&lt;article&gt;</code> untuk konten yang
+                dapat berdiri sendiri.
+              </p>
+            </section>
+            <section id="kesimpulan">
+              <h2>Kesimpulan</h2>
+              <p>
+                HTML semantik bukan hanya tentang membuat kode terlihat rapi.
+                Struktur ini membantu website menjadi lebih inklusif, mudah
+                ditemukan, dan mudah dirawat dalam jangka panjang.
+              </p>
+              <p>
+                Mulailah dengan mengganti <code>&lt;div&gt;</code> yang memiliki
+                fungsi khusus dengan elemen semantik yang sesuai.
+              </p>
+            </section>
+          </div>
+        </div>
+      </article>
+    </main>
+    <footer class="border-t border-line">
+      <div
+        class="mx-auto flex max-w-4xl justify-between px-5 py-6 text-xs text-muted lg:px-8"
+      >
+        <span>© 2026 Muhammad Reihano</span
+        ><a href="index.html" class="font-semibold text-brand"
+          >Kembali ke portfolio ↗</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
